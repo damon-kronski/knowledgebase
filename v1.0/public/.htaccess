@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^KB/([0-9]+)$    index.php?r=KB&id=$1    [NC,L]
+RewriteRule ^kb/([0-9]+)$    index.php?r=KB&id=$1    [NC,L]         
+RewriteRule ^search$    index.php?r=search&var=val    [QSA,NC,L]
+RewriteRule ^admin/(.*)$    index.php?r=admin&page=$1&var=val    [QSA,NC,L]

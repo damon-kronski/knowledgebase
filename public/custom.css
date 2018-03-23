@@ -1,0 +1,19 @@
+pre > code
+{
+    padding: 5px;
+    display: block;
+    background-color: #012456;
+    color: #FFFFFF;
+}
+
+textarea.form-control {
+  height: calc(100% - 375px);
+}
+
+.pagelist .media
+{
+  margin-bottom: 15px;
+  border: 1px solid #6c757d;
+  padding: 5px;
+  border-radius: 5px;
+}

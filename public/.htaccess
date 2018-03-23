@@ -1,0 +1,19 @@
+RewriteEngine On
+
+
+RewriteCond %{ENV:REDIRECT_STATUS} !=200
+RewriteRule ^admin/(.*)/([0-9]+)$        admin.php?page=$1&id=$2       [QSA,NC,L]
+RewriteCond %{ENV:REDIRECT_STATUS} !=200
+RewriteRule ^admin/(.*)/$        admin.php?page=$1       [QSA,NC,L]
+RewriteCond %{ENV:REDIRECT_STATUS} !=200
+RewriteRule ^admin/(.*)$        admin.php?page=$1       [QSA,NC,L]
+RewriteRule ^admin$             admin.php?page=admin    [QSA,NC,L]
+RewriteRule ^kb/([0-9]+)$	index.php?kb=$1		[QSA,NC,L]         
+RewriteRule ^kb/all$       index.php?page=kball         [QSA,NC,L]
+RewriteRule ^tags/(.*)$       index.php?page=tags&tags=$1         [QSA,NC,L]
+RewriteRule ^$                  index.php?page=home     [QSA,NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{ENV:REDIRECT_STATUS} !=200
+RewriteRule ^(.*)$		index.php?page=$1	[QSA,NC,L]
+
