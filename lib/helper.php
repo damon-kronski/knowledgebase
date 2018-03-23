@@ -1,6 +1,6 @@
 <?php
 
-$DB_CONFIG = ['username' => 'rwkb','password' => 'dTypphK9XtysFjVsajXCgPem','server' => 'localhost','dbname' => 'kb'];
+$DB_CONFIG = ['username' => '','password' => '','server' => 'localhost','dbname' => 'kb'];
 
 function GET($k,$d = false)
 {
